@@ -1,0 +1,8 @@
+.tree(data-id=tree._id.toString())
+  .controls
+    if(tree.isGrowable)
+      button.grow Grow
+    if(tree.isChoppable)
+      button.chop Chop
+  .height #{(tree.height / 12).toFixed(2)} ft
+  .img(class=tree.classes)

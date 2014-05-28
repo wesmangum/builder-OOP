@@ -1,0 +1,17 @@
+#user(data-id=user._id.toString()) User: #{user.username}
+#wood Wood: #{user.wood.toFixed(2)}
+#cash Cash: #{user.cash.toFixed(2)}
+button#plant Plant Seed
+input#wood-amount(type='text', placeholder='Wood Amt')
+button#sell Sell Wood
+
+h4 Store:
+#shop
+  if(user.isAutoGrowAvailable)
+    button#auto-grow Auto Grow
+  if(user.isAutoSeedAvailable)
+    button#auto-seed Auto Seed
+  if(user.isAutoRootAvailable)
+    button#auto-root Auto Root
+  if(user.isHouseAvailable)
+    button#buy-house Buy House

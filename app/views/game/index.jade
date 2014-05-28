@@ -1,0 +1,17 @@
+extends ../shared/template
+
+block content
+  h1 Welcome to Builder 2.0
+
+  #controls
+    input#username(type='text', autofocus=true, placeholder='Username')
+    button#login Login
+
+  #dashboard
+    #overview
+    #house
+    #inventory
+  #forest
+
+block scripts
+  script(src='/js/es6/compiled/game.js')

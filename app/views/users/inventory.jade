@@ -1,0 +1,10 @@
+h4 Upgrades:
+#upgrades
+  each item in user.items
+    case item.type
+      when 'autogrow'
+        include ../items/autogrow
+      when 'autoseed'
+        include ../items/autoseed
+      when 'autoroot'
+        include ../items/autoroot
